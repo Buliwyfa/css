@@ -142,42 +142,34 @@
 /*##################################################################################*/
 
 /*                        0em (0px)                                                 */
-/*======================================================================================*/
+/*==================================================================================*/
 @media only screen and (min-height:0px) {
-#testBand_vertical{background:cyan !important;color:black;}#testBand_vertical:before{content:"0px | ";}
 }/*end*/
-/*                        0em (320px)                                                        */
-/*======================================================================================*/
+/*                        0em (320px)                                                */
+/*===================================================================================*/
 @media only screen and (min-height:320px) {
-#testBand_vertical{background:green !important;color:white;}#testBand_vertical:before{content:"320px | ";}
 }/*end*/
-/*                        0em (533px)                                                        */
-/*======================================================================================*/
+/*                        0em (533px)                                                */
+/*===================================================================================*/
 @media only screen and (min-height:533px) {
-#testBand_vertical{background:gray !important;}#testBand_vertical:before{content:"533px | ";}
 }/*end*/
-/*                        0em (640px)                                                        */
-/*======================================================================================*/
+/*                        0em (640px)                                                */
+/*===================================================================================*/
 @media only screen and (min-height:640px) {
-#testBand_vertical{background:blue !important;}#testBand_vertical:before{content:"640px | ";}
 }/*end*/
-/*                        0em (720px)                                                        */
-/*======================================================================================*/
+/*                        0em (720px)                                                */
+/*===================================================================================*/
 @media only screen and (min-height:720px) {
-#testBand_vertical{background:purple !important;}#testBand_vertical:before{content:"720px | ";}
 }/*end*/
-/*                        0em (900px)                                                        */
-/*======================================================================================*/
+/*                        0em (900px)                                                */
+/*===================================================================================*/
 @media only screen and (min-height:900px) {
-#testBand_vertical{background:yellow !important;}#testBand_vertical:before{content:"900px | ";}
 }/*end*/
-/*                        0em (1024px)                                                        */
-/*======================================================================================*/
+/*                        0em (1024px)                                               */
+/*===================================================================================*/
 @media only screen and (min-height:1024px) {
-#testBand_vertical{background:red !important;}#testBand_vertical:before{content:"1024px | ";}
 }/*end*/
-/*                        0em (1600px)                                                        */
-/*======================================================================================*/
+/*                        0em (1600px)                                               */
+/*===================================================================================*/
 @media only screen and (min-height:1600px) {
-#testBand_vertical{background:magenta !important;}#testBand_vertical:before{content:"1600px | ";}
 }/*end*/
