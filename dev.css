@@ -1,0 +1,360 @@
+/*##################################################################################*/
+/*##################################################################################*/
+/*##################################################################################*/
+/*                                                                                    */
+/*                        RESPONSIVE ADJUSTMENTS                                        */
+/*                                                                                    */
+/*##################################################################################*/
+/*##################################################################################*/
+/*##################################################################################*/
+
+
+/**********************************************/
+/*        DEBUGIN ANY RESOLUTION              */
+#testBand,
+#testBand:before,
+#testBand:after,
+#testBand_right,
+#testBand_right:before,
+#testBand_right:after,
+#testBand_vertical{
+color:#000;
+font-size:10px;
+line-height:17px;
+/*width:100%;*/
+width:auto;
+/*border:1px solid #000;*/
+white-space:pre;
+/*white-space: pre-line;*/
+z-index:9999;
+}
+
+#testBand{
+position: fixed;
+bottom:25%;
+}
+
+#testBand:before,
+#testBand:after{
+padding:1px 2px 2px 5px;
+opacity:0.8;
+}
+
+#testBand:before{
+color:red;
+background:white;
+}
+
+#testBand:after{
+/*font-weight:bold;*/
+/*animation: blinker 3s linear infinite;*/
+}
+
+#testBand_right{
+position: fixed;
+bottom:25%;
+right:0px;
+text-align:right;
+}
+
+#testBand_right:before,
+#testBand_right:after{
+opacity:0.85;
+font-weight:bold;
+padding:1px 5px 1px 2px;
+}
+
+#testBand_right:before{
+font-size:12px;
+line-height:18px;
+}
+
+#testBand_vertical{
+}
+
+@keyframes blinker {  
+50% { opacity: 0.5; }
+}
+
+/*
+
+Color to use:
+#000000
+#e6194b
+#f032e6
+#ffe119
+#f58231
+#911eb4
+#e6beff
+#bcf60c
+#3cb44b
+#008080
+#808000
+#aaffc3
+#fabebe
+#fffac8
+#ffd8b1
+#9a6324
+#800000
+#46f0f0
+#4363d8
+#000075
+#808080
+#ffffff
+
+from High Contrast colors at https://sashat.me/2017/01/11/list-of-20-simple-distinct-colors/
+
+*/
+
+/*##################################################################################*/
+/*                                                                                  */
+/*                        RESPONSIVE ADJUSTMENTS HORIZONTAL                         */
+/*                                                                                  */
+/*##################################################################################*/
+
+/*                  0em (0em x 16px = 320px)                                            */
+/*======================================================================================*/
+@media only screen and (min-width:0px) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: XXem = XXXpx0px";
+background:#f032e6 !important;color:white;}
+#testBand_right:before{content:" BS-3 = .xs \00a0 \A \00a0 BS-4 = .xs";}
+#testBand_right:before{background:#f032e6 !important;color:white;}
+}/*end*/
+
+/*                  20em (20em x 16px = 320px)                                          */
+/*======================================================================================*/
+@media only screen and (min-width:20em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 20em = 320px";
+background:#ffe119 !important;color:black;}
+}/*end*/
+
+/*                  25em (25em x 16px = 400px)                                          */
+/*======================================================================================*/
+@media only screen and (min-width:25em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 25em = 400px";
+background:#f58231 !important;color:black;}
+}/*end*/
+
+/*                  30em (30em x 16px = 480px)                                          */
+/*======================================================================================*/
+@media only screen and (min-width:30em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 30em = 480px";
+background:#911eb4 !important;color:white;}
+}/*end*/
+
+/*                  36em (36em x 16px = 576px)                                          */
+/*======================================================================================*/
+@media only screen and (min-width:36em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 36em = 576px";
+background:#e6beff !important;color:black;}
+#testBand_right:before{content:" BS-3 = .xs \00a0 \A \00a0 BS-4 = .sm";}
+#testBand_right:before{background:#ffe119 !important;color:black;}
+}/*end*/
+
+/*                  37.5em (em x 16 = 600px)                                            */
+/*======================================================================================*/
+@media only screen and (min-width:37.5em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 37.5em = 600px";}
+background:#bcf60c !important;color:black;}
+}/*end*/
+
+/*                  40em (40em x 16 = 640px)                                            */
+/*======================================================================================*/
+@media only screen and (min-width:40em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 40em = 640px";
+background:#3cb44b !important;color:black;}
+}/*end*/
+
+/*                  45em (45em x 16 = 720px)                                            */
+/*======================================================================================*/
+@media only screen and (min-width:45em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 45em = 720px";
+background:#008080 !important;color:white;}
+}/*end*/
+
+
+/*                  46.875em (48em x 16 = 750px)                                        */
+/*======================================================================================*/
+@media only screen and (min-width:46.875em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 46.875em = 750px";
+background:#808000 !important;color:black;}
+#testBand_right:before{content:" BS-3 = .sm \00a0 \A \00a0 BS-4 = .sm";}
+#testBand_right:before{background:#f58231 !important;color:white;}
+}/*end*/
+
+
+/*                    48em (48em x 16 = 768px)                                          */
+/*======================================================================================*/
+@media only screen and (min-width:48em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 48em = 768px";
+background:#aaffc3 !important;color:black;}
+#testBand_right:before{content:" BS-3 = .sm \00a0 \A \00a0 BS-4 = .md";}
+#testBand_right:before{background:#911eb4 !important;color:white;}
+}/*end*/
+
+/*                    50em (50em x 16 = 800px)                                          */
+/*======================================================================================*/
+@media only screen and (min-width:50em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 50em = 800px";
+background:#fabebe !important;color:black;}
+}/*end*/
+
+/*                    55em (55em x 16 = 880px)                                          */
+/*======================================================================================*/
+@media only screen and (min-width:55em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 55em = 880px";
+background:#fffac8 !important;color:black;}
+}/*end*/
+
+/*                    56.25em (em x 16 = 900px)                                         */
+/*======================================================================================*/
+@media only screen and (min-width:56.25em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 56.25em = 900px";
+background:#ffd8b1 !important;color:black;}
+}/*end*/
+
+/*                    60em (em x 16 = 960px)                                            */
+/*======================================================================================*/
+@media only screen and (min-width:60em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 60em = 960px";
+background:#9a6324 !important;color:white;}
+}/*end*/
+
+/*                    60.625em (em x 16 = 970px)                                        */
+/*======================================================================================*/
+@media only screen and (min-width:60.625em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 60.625em = 970px";
+background:#800000 !important;color:white;}
+#testBand_right:before{content:" BS-3 = .md \00a0 \A \00a0 BS-4 = .md";}
+#testBand_right:before{background:#e6beff !important;color:white;}
+}/*end*/
+
+/*                    62m (62em x 16 = 992px)                                           */
+/*======================================================================================*/
+@media only screen and (min-width:62em ) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 62em = 992px";
+background:#46f0f0 !important;color:black;}
+#testBand_right:before{content:" BS-3 = .lg \00a0 \A \00a0 BS-4 = .lg";}
+#testBand_right:before{background:#bcf60c !important;color:black;}
+}/*end*/
+
+/*                    65em (65em x 16 = 1040px)                                         */
+/*======================================================================================*/
+@media only screen and (min-width:65em ) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 65em = 1040px";
+background:#4363d8 !important;color:white;}
+}/*end*/
+
+/*                       68.75em (68.75em x 16 = 1100px)                                                    */
+/*======================================================================================*/
+@media only screen and (min-width:68.75em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 68.75em = 1100px";
+background:#000075 !important;color:white;}
+}/*end*/
+
+/*                    70em (70em x 16 = 1120px)                                         */
+/*======================================================================================*/
+@media only screen and (min-width:70em ) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 70em = 1120px";
+background:#808080 !important;color:white;}
+}/*end*/
+
+/*                    75em (75em x 16 = 1200px)                                         */
+/*======================================================================================*/
+@media only screen and (min-width:75em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 75em = 1200px";
+background:#ffffff !important;color:black;}
+#testBand_right:before{content:" BS-3 = .lg \00a0 \A \00a0 BS-4 = .xl";}
+#testBand_right:before{background:#3cb44b !important;color:white;}
+}/*end*/
+
+/*                    80em (80em x 16 = 1280px)                                         */
+/*======================================================================================*/
+@media only screen and (min-width:80em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 80em = 1280px";
+background:cyan !important;color:black;}
+}/*end*/
+
+/*                    81.25em (81.25em x 16 = 1300px)                                   */
+/*======================================================================================*/
+@media only screen and (min-width:81.25em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 81.25em = 1300px";}
+}/*end*/
+
+/*                    100em (100em x 16 = 1600px)                                       */
+/*======================================================================================*/
+@media only screen and (min-width:100em) {
+#testBand:before{content:"Show ONLY in DEV mode \A";}
+#testBand:after{ content:"min-width: 100em = 1600px";
+background:yellow !important;color:black;}
+}/*end*/
+
+
+/*##################################################################################*/
+/*                                                                                  */
+/*                        RESPONSIVE ADJUSTMENTS VERTICAL                           */
+/*                                                                                  */
+/*##################################################################################*/
+
+/*                        0em (0px)                                                 */
+/*======================================================================================*/
+@media only screen and (min-height:0px) {
+#testBand_vertical{background:cyan !important;color:black;}#testBand_vertical:before{content:"0px | ";}
+}/*end*/
+/*                        0em (320px)                                                        */
+/*======================================================================================*/
+@media only screen and (min-height:320px) {
+#testBand_vertical{background:green !important;color:white;}#testBand_vertical:before{content:"320px | ";}
+}/*end*/
+/*                        0em (533px)                                                        */
+/*======================================================================================*/
+@media only screen and (min-height:533px) {
+#testBand_vertical{background:gray !important;}#testBand_vertical:before{content:"533px | ";}
+}/*end*/
+/*                        0em (640px)                                                        */
+/*======================================================================================*/
+@media only screen and (min-height:640px) {
+#testBand_vertical{background:blue !important;}#testBand_vertical:before{content:"640px | ";}
+}/*end*/
+/*                        0em (720px)                                                        */
+/*======================================================================================*/
+@media only screen and (min-height:720px) {
+#testBand_vertical{background:purple !important;}#testBand_vertical:before{content:"720px | ";}
+}/*end*/
+/*                        0em (900px)                                                        */
+/*======================================================================================*/
+@media only screen and (min-height:900px) {
+#testBand_vertical{background:yellow !important;}#testBand_vertical:before{content:"900px | ";}
+}/*end*/
+/*                        0em (1024px)                                                        */
+/*======================================================================================*/
+@media only screen and (min-height:1024px) {
+#testBand_vertical{background:red !important;}#testBand_vertical:before{content:"1024px | ";}
+}/*end*/
+/*                        0em (1600px)                                                        */
+/*======================================================================================*/
+@media only screen and (min-height:1600px) {
+#testBand_vertical{background:magenta !important;}#testBand_vertical:before{content:"1600px | ";}
+}/*end*/
