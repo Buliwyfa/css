@@ -1,37 +1,35 @@
 /********************************************************************************************/
 $(document).ready(function(){
 
-/********************************************************************************************
+var BSver           = ($().modal||$().tab).Constructor.VERSION,
+    $testBand       = $("#testBand"),
+    $testBand_right = $("#testBand_right");
 
-RESOLUTIONS
---------------------------
-*/
-$windowW = $(window).width();
+$testBand_right.html( '<br><span style="color:#fff;"> BSver= ' + BSver +'<br>jQuery= '+ jQuery.fn.jquery +'</span>' );
+
+/* RESOLUTIONS
+------------------------------------------------------------------------------------------------------------*/
+$windowW   = $(window).width();
 $documentW = $(document).width();
-$windowH = $(window).height();
+$windowH   = $(window).height();
 $documentH = $(document).height();
 
 $(window).on("orientationchange",function(){
-	$windowW = $(window).width();
+	$windowW   = $(window).width();
 	$documentW = $(document).width();
-	$windowH = $(window).height();
+	$windowH   = $(window).height();
 	$documentH = $(document).height();
 });
 $(window).on('resize', function(){
-	$windowW = $(window).width();
+	$windowW   = $(window).width();
 	$documentW = $(document).width();
-	$windowH = $(window).height();
+	$windowH   = $(window).height();
 	$documentH = $(document).height();
 });
-/********************************************************************************************/
 
 
-/********************************************************************************************
-
- CSS helpers
-
-*/
-/********************************************************************************************/
+/* CSS helpers
+------------------------------------------------------------------------------------------------------------*/
 function upadateTestBand($testBand) {
 
     $testBand.html(
@@ -42,10 +40,10 @@ function upadateTestBand($testBand) {
                   );
 };
 /********************************************************************************************/
-upadateTestBand($("#testBand"));
+upadateTestBand( $testBand );
 
-$(window).on("orientationchange",   function(){ upadateTestBand($("#testBand")); });
-$(window).on('resize',              function(){ upadateTestBand($("#testBand")); });
+$(window).on("orientationchange",   function(){ upadateTestBand( $testBand ); });
+$(window).on('resize',              function(){ upadateTestBand( $testBand ); });
 /********************************************************************************************/
 
 
